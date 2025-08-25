@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuestros Productos</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#2e004f] text-white">
+    <header class="bg-[#23003D]">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <a class="flex items-center" href="index.html">
+                <img alt="Logo MS Distribuciones" class="h-12 w-auto" height="60" src="Logo.png" width="90"/>
+            </a>
+            
+            <ul class="hidden md:flex space-x-8 text-white font-semibold text-sm">
+                <li><a class="hover:underline" href="index.html">Inicio</a></li>
+                <li><a class="hover:underline" href="productos.html">Productos</a></li>
+                <li><a class="hover:underline" href="servicios.html">Servicios</a></li>
+                <li><a class="hover:underline" href="nosotros.html">Nosotros</a></li>
+                <li><a class="hover:underline" href="Contacto.html">Contacto</a></li>
+            </ul>
+            
+            <button id="menu-button" class="text-white md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2a0540] p-4 text-center">
+            <ul class="flex flex-col space-y-4 text-white font-semibold">
+                <li><a class="hover:underline" href="index.html">Inicio</a></li>
+                <li><a class="hover:underline" href="productos.html">Productos</a></li>
+                <li><a class="hover:underline" href="servicios.html">Servicios</a></li>
+                <li><a class="hover:underline" href="nosotros.html">Nosotros</a></li>
+                <li><a class="hover:underline" href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="bg-white py-12 px-4">
+        <div class="text-center max-w-md w-full mx-auto">
+            <h2 class="text-2xl font-extrabold text-[#1B004B] mb-2">
+                Nuestros <span class="text-[#A800A8]">Productos</span>
+            </h2>
+            <p class="text-gray-500 mb-8 text-sm sm:text-base">
+                Conoce nuestra amplia gama de productos y servicios especializados.
+            </p>
+            <section class="bg-gray-50 border border-gray-200 rounded-lg p-8 mx-auto max-w-md">
+                <div class="flex justify-center mb-4">
+                    <div class="bg-[#A800A8]/30 rounded-full p-3 flex items-center justify-center">
+                        <img alt="Icono de catálogo de productos" class="w-6 h-6 text-[#A800A8]" height="24" src="https://storage.googleapis.com/a1aa/image/53ffe091-6226-489e-c5c7-0de8d7f7917d.jpg" width="24"/>
+                    </div>
+                </div>
+                <h3 class="text-[#1B004B] font-semibold mb-2">Catálogo de Productos</h3>
+                <p class="text-gray-500 text-xs mb-6 px-4">
+                    Descarga nuestro catálogo completo con todos los productos y servicios disponibles.
+                </p>
+                <a href="assets/catalogo.pdf" download="catalogo-ms-distribuciones.pdf" class="bg-[#A800A8] hover:bg-[#8B007F] text-white font-semibold text-xs py-3 px-6 rounded w-full flex items-center justify-center gap-2">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Descargar Catálogo PDF
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-10 text-[#9e7dbf]">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+                <div class="md:w-1/3">
+                    <h2 class="text-[#1a0033] font-extrabold text-lg mb-3">MS DISTRIBUCIONES</h2>
+                    <p class="text-[#A13FA1FF] text-sm leading-relaxed max-w-xs">
+                        Tu socio confiable en distribución. Conectamos empresas con oportunidades de crecimiento a través de soluciones logísticas innovadoras.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" aria-label="Facebook" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" aria-label="Twitter" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]"><i class="fab fa-twitter text-sm"></i></a>
+                        <a href="#" aria-label="Instagram" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]"><i class="fab fa-instagram text-sm"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <h3 class="text-[#1a0033] font-semibold mb-3">Enlaces Rápidos</h3>
+                    <nav class="flex flex-col space-y-2 text-[#A13FA1FF] text-sm">
+                        <a href="index.html" class="hover:underline hover:text-[#b3008a]">Inicio</a>
+                        <a href="productos.html" class="hover:underline hover:text-[#b3008a]">Productos</a>
+                        <a href="servicios.html" class="hover:underline hover:text-[#b3008a]">Servicios</a>
+                        <a href="nosotros.html" class="hover:underline hover:text-[#b3008a]">Nosotros</a>
+                        <a href="Contacto.html" class="hover:underline hover:text-[#b3008a]">Contacto</a>
+                    </nav>
+                </div>
+                <div class="md:w-1/3">
+                    <h3 class="text-[#1a0033] font-semibold mb-3">Contacto</h3>
+                    <div class="flex items-center space-x-2 text-[#A13FA1FF] text-sm mb-2">
+                        <i class="fas fa-phone-alt text-[#b3008a]"></i>
+                        <span>
+                            <a href="tel:+573134709171" class="leading-tight hover:underline">+57 3134709171</a>
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-2 text-[#A13FA1FF] text-sm mb-4">
+                        <i class="fas fa-envelope text-[#b3008a]"></i>
+                        <span>
+                            <a href="mailto:info@msdistribuciones.com" class="leading-tight hover:underline">info@msdistribuciones.com</a>
+                        </span>
+                    </div>
+                    <p class="text-[#1a0033] text-sm font-semibold mb-1">Dirección:</p>
+                    <p class="text-[#A13FA1FF] text-sm">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Calle+71%2370g-15" target="_blank" rel="noopener noreferrer" class="leading-tight hover:underline">Calle 71#70g-15</a>
+                    </p>
+                    <p class="leading-tight">Barrio Acapulco</p>
+                </div>
+            </div>
+            <hr class="border-t border-[#9e7dbf] my-6" />
+            <div class="flex flex-col md:flex-row justify-between text-[#bfa9d1] text-xs">
+                <p>© 2024 MS Distribuciones. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-3 md:mt-0">
+                    <a href="#" class="hover:underline">Política de Privacidad</a>
+                    <a href="#" class="hover:underline">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
